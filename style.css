@@ -1,0 +1,503 @@
+
+
+/*MOBILE*/
+@media screen and (max-width: 460px) {
+    .container {
+        font-size: 1.2em;
+    }
+
+    img.ban, img.first, main img {
+        display: none;
+    }
+
+    .text, div.ban {
+        width: 100%;
+    }
+
+    .lf {
+        padding-top: 80px;
+    }
+
+    div.ban {
+        margin-right: 11.46%;
+    }
+
+    section.tgh {
+        margin-right: 10px;
+    }
+
+    .price {
+        width: 90%;
+        padding-top: 80px;
+    }
+
+    .num, .number {
+        margin-bottom: 80px;
+    }
+
+    nav {
+        width: 50px;
+    }
+
+/*
+    nav {
+        display: block;
+        width: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+        
+    .menu ul {
+        visibility: hidden;
+        position: absolute;
+        top: 52px;
+        left: 3px;
+        display: none; 
+    }
+        
+    .menu:hover > ul,
+    .menu ul:hover {
+        visibility: visible;
+        display: block;
+    }
+        
+    nav ul li {
+        clear: both;
+        width: 100%;
+    } */
+
+    ul.menu li {
+        display: none;
+    }
+
+    #click:checked + label > ul.menu li {
+        display: block;
+    }
+
+    img.menu {
+        position: relative;
+    }
+
+    ul.menu {
+        position: absolute;
+        top: 52px;
+        width: 52px !important;
+        display: block !important;
+    }
+
+    header {
+        flex-wrap: nowrap !important;
+    }
+}
+
+
+/*TABLET*/
+@media screen and (min-width: 461px) and (max-width: 980px) {
+    .container {
+        font-size: 1.1em;
+    }
+
+    img.ban, img.first {
+        display: none;
+    }
+
+    div.ban {
+        margin-right: 11.46%;
+    }
+    
+    section.tgh {
+        margin-right: 30px;
+    }
+
+    div.price {
+        width: 54.1%;
+    }
+
+    .num, .number {
+        margin-bottom: 80px;
+    }
+
+    main img {
+        margin-top: 80px;
+    }
+
+    img.menu {
+        display: none;
+    }
+
+    nav {
+        width: 245px;
+    }
+}
+
+
+/*DESKTOP*/
+@media screen and (min-width: 981px) {
+    .container {
+        font-size: 1em;
+    }
+
+    .lm {
+        margin-left: 60px;
+    }
+
+    .lf {
+        width: 40.09%;
+    }
+
+    div.first {
+        margin-top: 30%;
+    }
+
+    div.back {
+        background: url(landie2-img/Path.png) no-repeat;
+        background-size: 100%;
+        width: 78%;
+        margin: 50px auto;
+    }
+
+    div.ban, div.text {
+        width: 48.65%;
+    }
+
+    section.tgh {
+        margin-right: 30px;
+    }
+
+    div.price {
+        width: 54.1%;
+        padding: 30%;
+    }
+
+    .banner {
+        font-size: 14px;
+    }
+
+    .cont {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .button:hover {
+        background: white;
+        color: #111B47;
+    }
+    
+    .lm:hover {
+        background: #091133;
+        color: white;
+    }
+
+    img.menu {
+        display: none;
+    }
+
+    nav {
+        width: 245px;
+    }
+}
+
+
+/*FONT*/
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+/*COMMON*/
+* {margin: 0; padding: 0;}
+
+body {
+    color: #6F7CB2;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+header, .indents {
+    width: 77%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*HEADER*/
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+ul.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    float: left;
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+}
+
+li.nav {
+    font-size: 14px;
+    line-height: 24px;
+    color: #505f98;
+    margin: 0 5px;
+}
+
+h1.landie {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 146%;
+    color: #37447E;
+    margin: 0 20px;
+}
+
+.buynow {
+    float: right;
+    width: 160px;
+}
+
+input {
+    display: none;
+}
+
+
+/*PART*/
+h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #091133;
+}
+
+.part {
+    max-width: 100%;
+    float: right;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+
+/*BANNER*/
+div.ban {
+    margin-left: 11.46%;
+}
+
+.banner h1 {
+    font-size: 50px;
+    line-height: 132%;
+    letter-spacing: 1px;
+}
+
+.banner {
+    float: left;
+    line-height: 24px;
+}
+
+img.ban {
+    float: right;
+}
+
+.box {
+    display: inline-flex;
+    margin-top: 180px !important;
+}
+   
+
+/*FIRST PART (NOT IN MAIN)*/
+div.first {
+    display: inline-flex;
+}
+
+img.first {
+    float: right;
+}
+
+.cont_first {
+    margin-bottom: 80px;
+}
+
+section.tgh {
+    display: inline-block;
+    width: 44%
+}
+
+section.t {
+    margin: 0;
+}
+
+h5.tgh {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    color: #091133;
+}
+
+p.tgh {
+    font-size: 12px;
+    line-height: 150%;
+    color: #5D6970;
+}
+
+
+/*BUTTON*/
+a {
+    font-weight: 500;
+    color: white;
+    background: #111B47;
+    border-radius: 2px;
+    text-align: center;
+    padding: 1px 0;
+    border: 2px solid #091133;
+    width: 189px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.lm {
+    font-weight: 500;
+    color: #091133;
+    background: white;
+    border-radius: 2px;
+    text-align: center;
+    padding: 1px 0;
+    width: 189px;
+    border: 2px solid #091133;
+}
+
+.banbtn {
+    margin-top: 69px;
+}
+
+.num {
+    margin-top: 44px;
+    font-size: 14px;
+}
+
+.number {
+    font-size: 14px;
+}
+
+.ecd {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+/*MAIN PARTS*/
+.cont {
+    margin: 18% 0; 
+}
+
+#cont3 {
+    margin-bottom: 0;
+}
+
+#cont1 {
+    margin-top: 36%;
+}
+
+
+/*PART WITH PRICE*/
+div.price {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+}
+
+.p1 {
+    margin-bottom: 36px;
+}
+
+.p2 {
+    font-size: 14px;
+    line-height: 171%; 
+}
+
+.h6 {
+    color: #222F65;
+    margin-bottom: 60px;
+}
+
+h2 {
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    color: #222F65;
+}
+
+
+/*FOOTER*/
+footer {
+    background: #E7ECFF;
+    height: 216px;
+}
+
+footer .indents {
+    height: 216px;
+}
+
+article.footer {
+    display: inline-flex;
+    justify-content: space-between;
+    height: 140px;
+    align-items: center;
+    width: 100%;
+    border-bottom: #dbdbdb solid 1px;
+}
+
+.ecd {
+    float: right;
+    align-self: center;
+}
+
+.copy {
+    float: left;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #939EA4;
+}
+
+.footer2 {
+    width: 100%;
+    height: 35.19%;
+    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.share {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 230px;
+    float: right;
+}
+
+ul.footer {
+    width: 245px;
+}
+
+li.footer {
+    color: #929ECC;
+}
